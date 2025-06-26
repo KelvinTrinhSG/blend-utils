@@ -8,10 +8,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node16",
-    "outDir": "./lib",
+    "outDir": "./lib"
   },
-  "include": [
-    "src",
-    "lib"
-  ]
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src", "lib"]
 }

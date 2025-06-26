@@ -107,7 +107,9 @@ export class AddressBook {
   }
 }
 
-const network = process.argv[2];
+import { config } from './env_config.js'; // hoặc '../utils/env_config.js' tùy vị trí
+const network = config.passphrase;
+// const network = process.argv[2];
 if (network == undefined || network == '') {
   throw new Error('Error: Network argument required');
 }

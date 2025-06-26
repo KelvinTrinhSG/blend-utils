@@ -110,6 +110,9 @@ export async function mock() {
     },
     adminTxParams
   );
+
+  console.log('testnetPool.contractId(): ' + testnetPool.contractId());
+
   // const testnetPool = new PoolContractV2(addressBook.getContractId('TestnetV2'));
   const testnetPoolXlmReserveMetaData: ReserveConfigV2 = {
     index: 0,
@@ -260,6 +263,7 @@ export async function mock() {
 
   console.log('');
   console.log('Whale Supply tokens to Testnet pool');
+  console.log('testnetPool.contractId(): ' + testnetPool.contractId());
   const bridgeSupplyRequests: Request[] = [
     {
       amount: BigInt(5000e7),
